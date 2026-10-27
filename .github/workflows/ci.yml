@@ -80,5 +80,5 @@ jobs:
         run: python -m compileall -q app
         working-directory: ai-service
       - name: AI service tests
-        run: pytest -q
+        run: PYTHONPATH=. pytest -q
         working-directory: ai-service
